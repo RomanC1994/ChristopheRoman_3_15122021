@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/Roboto/Roboto-Black.ttf'); 
+    src: url('../font/Roboto/Roboto-BlackItalic.ttf');
+    src: url('../font/Roboto/Roboto-Bold.ttf');
+    src: url('../font/Roboto/Roboto-BoldItalic.ttf');
+    src: url('../font/Roboto/Roboto-Italic.ttf');
+    src: url('../font/Roboto/Roboto-Light.ttf');
+    src: url('../font/Roboto/Roboto-LightItalic.ttf');
+    src: url('../font/Roboto/Roboto-Medium.ttf');
+    src: url('../font/Roboto/Roboto-MediumItalic.ttf'); 
+    src: url('../font/Roboto/Roboto-Regular.ttf'); 
+    src: url('../font/Roboto/Roboto-Thin.ttf'); 
+    src: url('../font/Roboto/Roboto-ThinItalic.ttf'); 
+    font-family: 'Shrikhand';
+    src: url('../font/Shrikhand/Shrikhand-Regular.ttf'); 
+}
+
+* {
+    box-sizing: border-box; /* Opera/IE 8+ */
+    -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+    font-family: 'Roboto';
+    text-align: left;
+ }
+
+body {
+     background-color: red;
+ }
+
+h1 {
+     font-family: 'Shrikhand';
+     color: green;
+     font-size: 60px;
+ }
+
+.cards {
+    margin-right: ;
+    margin-bottom: ;
+    width: ;
+    height: ;
+}
+
+.cards h1 {
+    font-family: 'Shrikhand';
+    color: blue;
+    font-size: 20px;
+}
+
+.card_box {
+    display: ;
+    flex-direction: ;
+    justify-content: ;
+    height: ;
+}
+
+.card {
+    display: ;
+    flex-direction: ;
+    border-radius: ;
+    background-color:;
+    font-weight: ;
+    font-size: ;
+    box-shadow: ;
+    width: ;
+    height: ;
+}
+
+.card_image {
+    height: ;
+    width: ;
+    overflow: ;
+}
+
+.card_image img {
+    height: ;
+    width: ;
+    border-radius: ;
+    object-fit: ;
+    object-position:;
+}
+
+.card_titlebox {
+    display: ;
+    flex-direction: ;
+    align-items: ;
+    height: ;
+}
+
+.card_title {
+    font-weight: ;
+    color: ;
+    margin-left: ;
+    font-size: ;
+}
