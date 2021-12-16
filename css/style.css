@@ -64,7 +64,7 @@ h1 {
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    height: 350px;
+    height: 356px;
 }
 
 .location {
@@ -102,6 +102,7 @@ h1 {
     font-size: 18px;
 }
 
+@media (min-width: 350px) {
 .explore {
     display: flex;
     flex-direction: column;
@@ -117,14 +118,14 @@ h1 {
     font-weight: 900;
     text-align: center;
     width: 70%;
-    margin-top: 10%;
-    margin-bottom: -2%;
+    margin-top: 40px;
+    margin-bottom: -10px;
 }
 
 .explore p {
     width: 80%;
     text-align: center;
-    margin-bottom: 7%;
+    margin-bottom: 15px;
     font-size: 20px;
     font-weight: 100;
     font-family: 'Roboto-Light';
@@ -145,6 +146,54 @@ form {
     font-size: 20px;
     border: none;
     font-family: 'Roboto';
+}
+}
+
+@media (max-width: 349px) {
+    .explore {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .explore h1 {
+        font-family: 'Roboto';
+        font-size: 20px;
+        font-weight: 900;
+        text-align: center;
+        width: 70%;
+        margin-top: 40px;
+        margin-bottom: -10px;
+    }
+    
+    .explore p {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 14px;
+        font-weight: 100;
+        font-family: 'Roboto-Light';
+    }
+    
+    form {
+        width: 80%;
+    }
+    
+    #explore_button {
+        background-color: #9356DC;
+        border-radius: 30px;
+        box-shadow: inset 15px 20px 20px 5px #ff79d97c;
+        height: 55px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 14px;
+        border: none;
+        font-family: 'Roboto';
+    } 
 }
 
 .ordering {
