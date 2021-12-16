@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" >
     <title>Oh my food</title>
 </head>
 <body>
@@ -14,13 +15,19 @@
         </header>
         <section class="adresses">
             <div class="location">
-                <icone></icone>
-                <p>Paris, Belleville</p>
+                <div class="location_shade">
+                </div>
+                <div class="location_content">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Paris, Belleville</p>
+                </div>
             </div>
             <div class="explore">
                 <h1>Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                <submit type='button' class="explore_button"></submit>
+                <form method="post" action="#.php"> 
+                    <input type="submit" name="explore_button" id="explore_button" value="Explorer nos restaurants"/>                
+                </form>
             </div>
         </section>
         <div class="ordering">
@@ -68,14 +75,16 @@
         </div>
     </div>
     <footer>
-        <div class="footer_box">
-            <h1>ohmyfood</h1>
-            <icone></icone>
-            <p>Proposer un restaurant</p>
-            <icone></icone>
-            <p>Devenir partenaire</p>
-            <p>Mentions légales</p>
-            <p>Contact</p>
+        <div class="footer_container">
+            <div class="footer_box">
+                <h1>ohmyfood</h1>
+                <icone></icone>
+                <p>Proposer un restaurant</p>
+                <icone></icone>
+                <p>Devenir partenaire</p>
+                <p>Mentions légales</p>
+                <p>Contact</p>
+            </div>
         </div>
     </footer>
 </body>
