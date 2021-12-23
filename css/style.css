@@ -336,6 +336,10 @@ form {
     object-position: 0px -90px;
 }
 
+.charonne img {
+    object-position: 0px -185px;
+}
+
 .new {
     width: 25%;
     min-width: 70px;
