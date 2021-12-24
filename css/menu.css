@@ -53,12 +53,15 @@ header {
     background-color: white;
 }
 
-.fa-arrow-left {
-    color: black;
-    font-size: 25px;
+header a {
     position: relative;
     top: 30px;
     right: 20%;
+}
+
+.fa-arrow-left {
+    color: black;
+    font-size: 25px;
 }
 
 h1 {
