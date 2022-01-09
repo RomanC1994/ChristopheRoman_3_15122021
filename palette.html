@@ -21,7 +21,11 @@
         <section class="menu">
             <div class="menu_t">
                 <p>La palette du goût</p>
-                <i class="far fa-heart"></i>
+                <i class="far fa-heart empty_heart">
+                    <i class="fas fa-heart full_heart">
+                        <div class="progress_bar"></div> 
+                    </i>
+                </i>
             </div>
             <div class="choix_container">
                 <div class="choix">
@@ -122,7 +126,9 @@
                 </div>
             </div>
             <form method="post" action="#.php"> 
-                <input type="submit" name="order_button" id="order_button" value="Commander"/>                
+                <button class="btn" id="commande_btn">
+                    Commander
+                </button>                    
             </form>
         </section>
     </div>

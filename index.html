@@ -27,7 +27,9 @@
                 <h1>Réservez le menu qui vous convient</h1>
                 <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
                 <form method="post" action="#.php"> 
-                    <input type="submit" name="explore_button" id="explore_button" value="Explorer nos restaurants"/>                
+                    <button class="btn" id="explore_btn">
+                        Explorer nos restaurants
+                    </button>         
                 </form>
             </div>
         </section>
@@ -40,7 +42,7 @@
                     <i class="fas fa-circle"></i>
                     <p class="i_number">1</p>
                     <i class="fas fa-mobile-alt"></i>
-                    <div class="ordering_block_p">
+                    <div class="ordering_block_p ordering_block_p_1">
                         <p>Choisissez un restaurant</p>
                     </div>
                 </div>
@@ -79,7 +81,9 @@
                              <h1>La palette du goût</h1>
                              <p>Ménilmontant</p>
                            </div>
-                           <i class="far fa-heart"></i>
+                           <i class="far fa-heart empty_heart">
+                            <i class="fas fa-heart full_heart"></i>
+                           </i>
                         </div>
                     </a>
                 </div>
@@ -94,7 +98,9 @@
                              <h1>La note enchantée</h1>
                              <p>Charonne</p>
                            </div>
-                           <i class="far fa-heart"></i>
+                           <i class="far fa-heart empty_heart">
+                            <i class="fas fa-heart full_heart"></i>
+                           </i>
                         </div>
                     </a>
                 </div>
@@ -108,7 +114,9 @@
                              <h1>A la française</h1>
                              <p>Cité Rouge</p>
                            </div>
-                           <i class="far fa-heart"></i>
+                           <i class="far fa-heart empty_heart">
+                            <i class="fas fa-heart full_heart"></i>
+                           </i>
                         </div>
                     </a>
                 </div>
@@ -121,7 +129,9 @@
                              <h1>Le délice des sens</h1>
                              <p>Folie-Méricourt</p>
                            </div>
-                           <i class="far fa-heart"></i>
+                           <i class="far fa-heart empty_heart">
+                            <i class="fas fa-heart full_heart"></i>
+                           </i>
                         </div>
                     </a>
                 </div>
@@ -132,10 +142,14 @@
         <div class="footer_container">
             <div class="footer_box">
                 <h1>ohmyfood</h1>
-                <icone></icone>
+                <div class="ip_contain">
+                <i class="fas fa-utensils"></i>
                 <p>Proposer un restaurant</p>
-                <icone></icone>
+                </div>
+                <div class="ip_contain">
+                <i class="fas fa-handshake"></i>
                 <p>Devenir partenaire</p>
+                </div>
                 <p>Mentions légales</p>
                 <p>Contact</p>
             </div>

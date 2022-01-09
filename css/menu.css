@@ -56,7 +56,7 @@ header {
 header a {
     position: relative;
     top: 30px;
-    right: 20%;
+    right: 18%;
 }
 
 .fa-arrow-left {
@@ -112,10 +112,31 @@ section {
     width: 85%;
 }
 
-.fa-heart {
+.empty_heart {
     color: black;
     font-size: 35px;
     position: relative;
+    z-index: 0;
+}
+
+.empty_heart:hover .full_heart {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.full_heart {
+    color: #9356DC;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0.5px;
+    left: 0;
+    z-index: 1;
+    opacity: 1;
+    font-size: 35px;
+    overflow: hidden;
+    transform: scaleY(0);
+    transition: 2000ms;
 }
 
 .choix_container {
@@ -137,11 +158,11 @@ section {
 .choix_t {
     font-size: 20px;
     text-decoration: underline 2px green;
-    width: 90%;
+    width: 96%;
 }
 
 .plat {
-    width: 90%;
+    width: 98%;
     height: 70px;
     display: flex;
     flex-direction: row;
@@ -155,12 +176,13 @@ section {
 }
 
 .plat_info {
-    width: 80%;
+    width: 90%;
 }
 
 .plat_info h1 {
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Roboto';
+    margin-bottom: -10px;
 }
 
 .plat_info p {
@@ -181,7 +203,8 @@ form {
     margin-top: 50px;
 }
 
-#order_button {
+.btn {
+    position: relative;
     background-color: #9356DC;
     border-radius: 30px;
     box-shadow: inset 15px 20px 20px 5px #ff79d97c;
@@ -192,6 +215,32 @@ form {
     font-size: 20px;
     border: none;
     font-family: 'Roboto';
+    z-index: 1;
+} 
+.btn:hover.btn::after {
+    opacity: 1;
+}
+.btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #a57bd8;
+    border-radius: 30px;
+    box-shadow: inset 15px 20px 20px 5px #ff79d97c;
+    height: 55px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border: none;
+    font-family: 'Roboto';
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 500ms;
+    box-shadow: 2px 2px 2px 2px grey;
 }
 
 footer {
