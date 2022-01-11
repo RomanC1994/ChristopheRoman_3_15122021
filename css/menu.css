@@ -129,7 +129,7 @@ section {
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0.5px;
+    bottom: 0;
     left: 0;
     z-index: 1;
     opacity: 1;
@@ -170,13 +170,35 @@ section {
     align-items: center;
     background-color: white;
     border-radius: 20px;
-    padding: 10px;
     box-shadow: 1px 1px 5px 3px grey;
     margin-bottom: 15px;
+    overflow: hidden;
+}
+
+@keyframes plat-loading {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.choix_first {
+    animation: plat-loading 4s 1s both;
+}
+
+.choix_second {
+    animation: plat-loading 4s 2s both;
+}
+
+.choix_third {
+    animation: plat-loading 4s 3s both;
 }
 
 .plat_info {
     width: 90%;
+    padding: 10px;
 }
 
 .plat_info h1 {
@@ -192,10 +214,74 @@ section {
 .plat_prix {
     width: 20%;
     margin-top: 30px;
+    margin-right: 5%;
 }
 
 .plat_prix p {
     margin-left: 50%;
+}
+
+.validation_box {
+    height: 100%;
+    width: 0%;
+    background-color: cyan;
+    position: relative;
+    left: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.plat:hover .validation_box {
+    animation: checker 1000ms 500ms both, coming 2000ms both;
+}
+
+@keyframes coming {
+    0% {
+        left: 30%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes checker {
+    0% {
+        
+    }
+    100% {
+        width: 30%;
+    }
+}
+
+.validation_circle {
+    position: relative;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.plat:hover .validation_circle {
+    animation: rotate 1100ms 700ms both;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.fa-check {
+    color: cyan;
 }
 
 form {
