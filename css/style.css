@@ -11,6 +11,7 @@
     -moz-box-sizing: border-box; /* Firefox, autres Gecko */
     -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
     text-align: left;
+    font-family: 'Roboto';
 }
 
 body {
