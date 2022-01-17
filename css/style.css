@@ -1,17 +1,7 @@
 @font-face {
     font-family: 'Roboto';
-    src: url('../font/Roboto/Roboto-Black.ttf'); 
-    src: url('../font/Roboto/Roboto-BlackItalic.ttf');
-    src: url('../font/Roboto/Roboto-Bold.ttf');
-    src: url('../font/Roboto/Roboto-BoldItalic.ttf');
-    src: url('../font/Roboto/Roboto-Italic.ttf');
-    src: url('../font/Roboto/Roboto-Light.ttf');
-    src: url('../font/Roboto/Roboto-LightItalic.ttf');
-    src: url('../font/Roboto/Roboto-Medium.ttf');
-    src: url('../font/Roboto/Roboto-MediumItalic.ttf'); 
     src: url('../font/Roboto/Roboto-Regular.ttf');
-    src: url('../font/Roboto/Roboto-Thin.ttf'); 
-    src: url('../font/Roboto/Roboto-ThinItalic.ttf'); 
+     
     font-family: 'Shrikhand';
     src: url('../font/Shrikhand/Shrikhand-Regular.ttf'); 
 }
@@ -20,11 +10,8 @@
     box-sizing: border-box; /* Opera/IE 8+ */
     -moz-box-sizing: border-box; /* Firefox, autres Gecko */
     -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
-    font-family: 'Roboto';
     text-align: left;
 }
-
-/*//////////////PARTIE MOBILE///////////////////*/
 
 body {
     display: flex;
@@ -183,7 +170,7 @@ header {
     height: 75px;
 }
 
-h1 {
+header h1 {
     font-family: 'Shrikhand';
     color: black;
     font-size: 35px;
@@ -225,6 +212,10 @@ section {
     width: 100%;
 }
 
+.location_content p {
+    font-family: 'Roboto';
+}
+
 .fas {
     color: grey;
     font-size: 25px;
@@ -257,8 +248,7 @@ section {
     width: 100%;
 }
 
-.explore h1 {
-    font-family: 'Roboto';
+.explore h2 {
     font-size: 28px;
     font-weight: 900;
     text-align: center;
@@ -291,7 +281,6 @@ form {
     color: white;
     font-size: 20px;
     border: none;
-    font-family: 'Roboto';
     z-index: 1;
 }
 
@@ -315,7 +304,6 @@ form {
     color: white;
     font-size: 14px;
     border: none;
-    font-family: 'Roboto';
     opacity: 0;
     z-index: -1;
     transition: opacity 500ms;
@@ -333,8 +321,8 @@ form {
         width: 100%;
     }
     
-    .explore h1 {
-        font-family: 'Roboto';
+    .explore h2 {
+
         font-size: 20px;
         font-weight: 900;
         text-align: center;
@@ -367,7 +355,7 @@ form {
         color: white;
         font-size: 14px;
         border: none;
-        font-family: 'Roboto';
+
         z-index: 1;
     } 
     .btn:hover.btn::after {
@@ -389,7 +377,7 @@ form {
         color: white;
         font-size: 14px;
         border: none;
-        font-family: 'Roboto';
+
         opacity: 0;
         z-index: -1;
         transition: opacity 500ms;
@@ -413,6 +401,11 @@ form {
 
 .ordering_t {
     width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.ordering h2 {
     font-size: 25px;
     font-weight: 900;
 }
@@ -500,7 +493,6 @@ form {
 .cards h1 {
     font-size: 20px;
     font-weight: 900;
-    font-family: 'Roboto';
 }
 
 .card {
@@ -558,6 +550,11 @@ form {
 .card_title {
     color: black;
     font-size: 15px;
+}
+
+.card_title h2 {
+    font-size: 20px;
+    margin-bottom: -5px;
 }
 
 .empty_heart {
@@ -624,4 +621,10 @@ footer {
 footer h1 {
     font-size: 20px;
     color: white;
+    font-family: 'Shrikhand';
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
 }
