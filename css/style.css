@@ -29,7 +29,7 @@ body {
     max-width: 1400px;
     width: 100%;
     animation: back_load 600ms 3s both;
-    background-color: white;
+    background-color: red;
 }
 
 @keyframes back_load {
